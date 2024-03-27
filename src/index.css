@@ -1,0 +1,31 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --color-background: #8ecae6;
+  --color-div-background: #4361ee;
+  --color-text: #3f37c9;
+  --color-p-text: #6c757d;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+}
