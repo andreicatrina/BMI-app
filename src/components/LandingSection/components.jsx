@@ -36,3 +36,43 @@ export const LandingTextContainer = styled.div`
     padding: 8px;
   }
 `;
+
+export const CalculatorParentContainer = styled.div`
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+  border-radius: 10px;
+
+  h3 {
+    margin-bottom: 12px;
+  }
+`;
+
+export const CalculatorInputsContainer = styled.div`
+  display: flex;
+  gap: 24px;
+`;
+
+export const HeightContainer = styled.div`
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-p-text);
+  }
+`;
+
+export const HeightInputContainer = styled.div`
+  display: flex;
+  gap: 4px;
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+`;
+
+export const WeightContainer = styled.div``;
+
+export const WeightInputsContainer = styled.div``;
