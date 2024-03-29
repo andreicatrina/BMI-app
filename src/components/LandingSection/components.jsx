@@ -7,16 +7,20 @@ export const Landing = styled.section`
 `;
 
 export const LandingContainer = styled.div`
+  display: flex;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 120px 24px;
+  gap: 24px;
+  /* position: relative; */
 `;
 
 export const LandingTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   gap: 20px;
   padding: 24px;
 
@@ -38,14 +42,23 @@ export const LandingTextContainer = styled.div`
 `;
 
 export const CalculatorParentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   background-color: #fff;
   width: 100%;
   max-width: 600px;
   padding: 24px;
   border-radius: 10px;
+  margin-top: 128px;
+  /* position: absolute;
+  top: 200px;
+  left: 50%; */
 
   h3 {
     margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
   }
 `;
 
@@ -55,6 +68,9 @@ export const CalculatorInputsContainer = styled.div`
 `;
 
 export const HeightContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   label {
     font-size: 16px;
     font-weight: 500;
@@ -64,6 +80,7 @@ export const HeightContainer = styled.div`
 
 export const HeightInputContainer = styled.div`
   display: flex;
+  align-items: center;
   gap: 4px;
 
   p {
@@ -71,8 +88,65 @@ export const HeightInputContainer = styled.div`
     font-weight: 600;
     color: var(--color-text);
   }
+
+  input {
+    height: 28px;
+    border: 1px solid var(--color-p-text);
+    border-radius: 4px;
+    padding-left: 4px;
+    font-size: 16px;
+  }
 `;
 
-export const WeightContainer = styled.div``;
+export const WeightContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-p-text);
+  }
+`;
 
-export const WeightInputsContainer = styled.div``;
+export const WeightInputContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  input {
+    height: 28px;
+    border: 1px solid var(--color-p-text);
+    border-radius: 4px;
+    padding-left: 4px;
+    font-size: 16px;
+  }
+`;
+
+export const CalculatorInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-div-background);
+  color: #fff;
+  padding: 48px 12px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 80px;
+  gap: 16px;
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+`;

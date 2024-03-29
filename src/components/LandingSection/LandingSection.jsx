@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  CalculatorInfoContainer,
   CalculatorInputsContainer,
   CalculatorParentContainer,
   HeightContainer,
@@ -8,6 +9,7 @@ import {
   LandingContainer,
   LandingTextContainer,
   WeightContainer,
+  WeightInputContainer,
 } from "./components";
 
 export const LandingSection = () => {
@@ -32,12 +34,16 @@ export const LandingSection = () => {
             </HeightContainer>
             <WeightContainer>
               <label htmlFor="">Weight</label>
-              <div>
+              <WeightInputContainer>
                 <input type="text" placeholder="0" />
                 <p>kg</p>
-              </div>
+              </WeightInputContainer>
             </WeightContainer>
           </CalculatorInputsContainer>
+          <CalculatorInfoContainer>
+            <h3>Welcome!</h3>
+            <p>Enter your height and weight and you'll see your BMI index here</p>
+          </CalculatorInfoContainer>
         </CalculatorParentContainer>
       </LandingContainer>
     </Landing>
