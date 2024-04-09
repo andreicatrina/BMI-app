@@ -48,7 +48,7 @@ export const CalculatorParentContainer = styled.div`
   background-color: #fff;
   width: 100%;
   max-width: 600px;
-  padding: 24px;
+  padding: 48px 24px;
   border-radius: 10px;
   margin-top: 128px;
   /* position: absolute;

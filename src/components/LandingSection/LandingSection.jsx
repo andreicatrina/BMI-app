@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CalculatorInfoContainer,
   CalculatorInputsContainer,
@@ -13,6 +13,22 @@ import {
 } from "./components";
 
 export const LandingSection = () => {
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
+
+  function CalculateBmi() {
+    console.log((weight / (height * height)) * 10000);
+  }
+
+  function onChangeHeight(e) {
+    // console.log(height);
+    setHeight(e.target.value);
+  }
+
+  function onChangeWeight(e) {
+    setWeight(e.target.value);
+  }
+
   return (
     <Landing>
       <LandingContainer>
@@ -28,14 +44,14 @@ export const LandingSection = () => {
             <HeightContainer>
               <label htmlFor="">Height</label>
               <HeightInputContainer>
-                <input type="text" placeholder="0" />
+                <input onChange={onChangeHeight} type="number" placeholder="0" />
                 <p>cm</p>
               </HeightInputContainer>
             </HeightContainer>
             <WeightContainer>
               <label htmlFor="">Weight</label>
               <WeightInputContainer>
-                <input type="text" placeholder="0" />
+                <input onChange={onChangeWeight} type="number" placeholder="0" />
                 <p>kg</p>
               </WeightInputContainer>
             </WeightContainer>
@@ -43,6 +59,7 @@ export const LandingSection = () => {
           <CalculatorInfoContainer>
             <h3>Welcome!</h3>
             <p>Enter your height and weight and you'll see your BMI index here</p>
+            <button onClick={CalculateBmi}>See BMI</button>
           </CalculatorInfoContainer>
         </CalculatorParentContainer>
       </LandingContainer>
