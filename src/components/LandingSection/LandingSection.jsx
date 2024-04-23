@@ -15,9 +15,16 @@ import {
 export const LandingSection = () => {
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
+  const [bmi, setBmi] = useState("");
+  const [error, setError] = useState("");
 
   function CalculateBmi() {
-    console.log((weight / (height * height)) * 10000);
+    if (height === 0 || weight === 0) {
+      setError("Please complete both fields!");
+    } else {
+      console.log(((weight / (height * height)) * 10000).toFixed(2));
+      setBmi(((weight / (height * height)) * 10000).toFixed(2));
+    }
   }
 
   function onChangeHeight(e) {
@@ -57,8 +64,18 @@ export const LandingSection = () => {
             </WeightContainer>
           </CalculatorInputsContainer>
           <CalculatorInfoContainer>
-            <h3>Welcome!</h3>
-            <p>Enter your height and weight and you'll see your BMI index here</p>
+            {bmi ? (
+              <div>
+                {/* <p>{error}</p> */}
+                <p>{`Your Body Mass Index is ${bmi}!`}</p>
+              </div>
+            ) : (
+              <div>
+                <h3>Welcome!</h3>
+                <p>Enter your height and weight and you'll see your BMI index here</p>
+              </div>
+            )}
+
             <button onClick={CalculateBmi}>See BMI</button>
           </CalculatorInfoContainer>
         </CalculatorParentContainer>

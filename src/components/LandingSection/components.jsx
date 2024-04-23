@@ -2,8 +2,6 @@ import { styled } from "styled-components";
 
 export const Landing = styled.section`
   min-height: 100vh;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(126deg, rgba(255, 255, 255, 1) 0%, rgba(151, 167, 239, 1) 77%);
 `;
 
 export const LandingContainer = styled.div`
@@ -148,5 +146,13 @@ export const CalculatorInfoContainer = styled.div`
   p {
     font-size: 16px;
     font-weight: 400;
+  }
+
+  button {
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    border: none;
   }
 `;
