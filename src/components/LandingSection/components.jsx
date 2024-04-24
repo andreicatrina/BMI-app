@@ -49,9 +49,9 @@ export const CalculatorParentContainer = styled.div`
   padding: 48px 24px;
   border-radius: 10px;
   margin-top: 128px;
-  /* position: absolute;
-  top: 200px;
-  left: 50%; */
+  -webkit-box-shadow: 7.5px 8px 15px 3px #d5dbf8;
+  -moz-box-shadow: 7.5px 8px 15px 3px #d5dbf8;
+  box-shadow: 7.5px 8px 15px 3px #d5dbf8;
 
   h3 {
     margin-bottom: 12px;

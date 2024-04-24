@@ -1,5 +1,16 @@
 import React from "react";
-import { DetailsContainer, DetailsParent, TextContainer } from "./components";
+import {
+  DetailsContainer,
+  DetailsParent,
+  TextContainer,
+  TipContainer1,
+  TipContainer2,
+  TipContainer3,
+  TipsContainer,
+} from "./components";
+import { GiCupcake } from "react-icons/gi";
+import { BiDumbbell } from "react-icons/bi";
+import { GiNightSleep } from "react-icons/gi";
 
 export const DetailsSection = () => {
   return (
@@ -14,6 +25,32 @@ export const DetailsSection = () => {
             regular physical activity, ideally about 30 minutes daily for five days a week.
           </p>
         </TextContainer>
+        <TipsContainer>
+          <TipContainer1>
+            <GiCupcake />
+            <h3>Healthy eating</h3>
+            <p>
+              Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity,
+              and mood.
+            </p>
+          </TipContainer1>
+          <TipContainer2>
+            <BiDumbbell />
+            <h3>Regular exercise</h3>
+            <p>
+              Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering
+              wellness and logevity.
+            </p>
+          </TipContainer2>
+          <TipContainer3>
+            <GiNightSleep />
+            <h3>Adequate sleep</h3>
+            <p>
+              Sleep enhances mental clarity, emotional stability, and physical wellness, promoting everall restoration
+              and rejuvenation.
+            </p>
+          </TipContainer3>
+        </TipsContainer>
       </DetailsContainer>
     </DetailsParent>
   );
