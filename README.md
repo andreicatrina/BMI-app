@@ -1,8 +1,11 @@
-# React + Vite
+# Body Mass Index app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## React + Vite project
 
-Currently, two official plugins are available:
+### Screens
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![bmi1](https://github.com/andreicatrina/BMI-app/assets/90219924/8acca892-1f02-47cf-9a46-cfd2aff0761c)
+
+![bmi2](https://github.com/andreicatrina/BMI-app/assets/90219924/886d6bad-974a-49bc-a70e-ff2842b9aa3a)
+
+![bmi3](https://github.com/andreicatrina/BMI-app/assets/90219924/b17d7cd5-e7b4-4e11-ad02-99aae3f2f734)
